@@ -21,11 +21,12 @@ Before starting, please install the dependencies
 * Vagrant - https://www.vagrantup.com/downloads.html
 * Python3.x - https://www.python.org/downloads/
 * VirtualBox - https://www.virtualbox.org/wiki/Downloads
-* Install requirements.txt 
+* Install requirements.txt (python requests)
 
 ```
-pip3 install requirements.txt
-
+pip install requirements.txt
+or
+pip install requests
 ```
 
 ### Installing & Executing program
@@ -34,7 +35,7 @@ to start working with the stack, you simply need to run stacktool.py up
 
 ```
 git clone url
-cd url
+cd stack-monitoring
 chmod +x stacktool.py
 ./stacktool.py up
 ```
