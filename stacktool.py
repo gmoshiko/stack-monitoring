@@ -3,7 +3,7 @@
 """
 Author: Moshiko Gueta
 Description: A tool to control the monitor stack created by: 
-you need to give run permission to the script with: 'chown +x stacktool.py'
+you need to give execute permission to the script with: 'chown +x stacktool.py'
 ./stacktool.py -h will help you with the rest. 
 """
 
