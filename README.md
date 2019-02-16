@@ -70,7 +70,7 @@ which python
 ## Stacktool
 
 Stacktool is built to maintaining and monitoring the stack.  
-for example, you can send any docker command to the docker driver inside the VM with just adding '--cmd'
+for example, you can send any docker command and control the stack with '--cmd'
 
 ```
 ./stacktool.py docker --cmd ps
