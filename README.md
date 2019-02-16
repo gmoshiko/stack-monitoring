@@ -10,7 +10,10 @@ in this stack you will find:
 * Prometheus Server
 * Graphite
 
-everything will be provision using the stacktool.py included in this repo. 
+everything will be provision using the stacktool.py included in this repo.  
+The stack build on top Ubuntu VM using Vagrant to provision, docker & Docker Swarm
+to run the services.  
+after installing the stack you can access it via http://localhost:port 
 
 ## Getting Started
 
@@ -34,7 +37,7 @@ pip install requests
 to start working with the stack, you simply need to run stacktool.py up
 
 ```
-git clone url
+git clone https://github.com/gmoshiko/stack-monitoring
 cd stack-monitoring
 chmod +x stacktool.py
 ./stacktool.py up
@@ -51,11 +54,34 @@ chmod +x stacktool.py
 9005 -> Kibana Dashboard  
 9006 -> ElasticSearch  
 
+in the end of the provision, you will get a message with everything you need.  
+
 ```
 ./stacktool.py -h
 ./stacktool.py status
 which python
 ```
+
+## Stacktool
+
+Stacktool is build for maintain, and monitor the stack.  
+for example you can send any docker command to the docker driver inside the VM with just adding '--cmd'
+
+```
+./stacktool.py docker --cmd ps
+```
+
+it can do even more advance commands like that:
+
+```
+./stacktool.py docker --cmd 'logs 60cbbccec46d'
+```
+Options: 
+* up - bring the stack up.
+* purge - deleting the stack.
+* status - healthcheck the stack.
+* docker - using for docker commands.
+* vagrant - using for vagrant commands.
 
 ## Authors
 
