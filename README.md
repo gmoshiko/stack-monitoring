@@ -4,11 +4,10 @@ Monitor-Stack build on Vagrant & Docker.
 
 ## Description
 
-THIS IS FOR DEMO ONLY.
-it can be done in many ways. for exmaple you can use ansible_local with vagrant.  
-stacktool was build for internal use to check the stack while i was builing it.  
-the stacktool is only checking some response code and regex. you can edit it and add  
-more tests as needed.  
+THIS IS FOR DEMO ONLY.  
+it can be done in many ways. for example, you can use ansible_local with vagrant.  
+stack tool was build for internal use to check the stack while I was building it.  
+the stack tool is only checking some response code and regex. it can be edit and add more tests as needed.  
 
 in this stack you will find: 
 * ELK Stack
@@ -16,8 +15,8 @@ in this stack you will find:
 * Prometheus Server
 * Graphite
 
-everything will be provision using the stacktool.py included in this repo.  
-The stack build on top Ubuntu VM using Vagrant to provision, docker & Docker Swarm
+everything will be provisioned using the stack tool.py included in this repo.  
+The stack builds on top Ubuntu VM using Vagrant to provision, docker & Docker Swarm
 to run the services.  
 after installing the stack you can access it via http://localhost:port 
 
@@ -70,14 +69,14 @@ which python
 
 ## Stacktool
 
-Stacktool is build for maintain, and monitor the stack.  
-for example you can send any docker command to the docker driver inside the VM with just adding '--cmd'
+Stacktool is built to maintaining and monitoring the stack.  
+for example, you can send any docker command to the docker driver inside the VM with just adding '--cmd'
 
 ```
 ./stacktool.py docker --cmd ps
 ```
 
-it can do even more advance commands like that:
+it can do even more advanced commands like that:
 
 ```
 ./stacktool.py docker --cmd 'logs 60cbbccec46d'
@@ -85,7 +84,7 @@ it can do even more advance commands like that:
 Options: 
 * up - bring the stack up.
 * purge - deleting the stack.
-* status - healthcheck the stack.
+* status - health check the stack.
 * docker - using for docker commands.
 * vagrant - using for vagrant commands.
 
