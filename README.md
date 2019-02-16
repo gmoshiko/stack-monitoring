@@ -45,8 +45,8 @@ chmod +x stacktool.py
 * check the interpreter on the script
 * grafana user|password admin|foobar
 * ports:
-9000 -> Grafana Dashboard
-9001 -> Prometheus Server
+  9000 -> Grafana Dashboard
+  9001 -> Prometheus Server
 9003 -> Graphite
 9005 -> Kibana Dashboard
 9006 -> ElasticSearch
