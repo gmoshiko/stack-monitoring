@@ -4,6 +4,12 @@ Monitor-Stack build on Vagrant & Docker.
 
 ## Description
 
+THIS IS FOR DEMO ONLY.
+it can be done in many ways. for exmaple you can use ansible_local with vagrant.  
+stacktool was build for internal use to check the stack while i was builing it.  
+the stacktool is only checking some response code and regex. you can edit it and add  
+more tests as needed.  
+
 in this stack you will find: 
 * ELK Stack
 * Grafana Dashboard
