@@ -15,7 +15,7 @@ in this stack you will find:
 * Prometheus Server
 * Graphite
 
-everything will be provisioned using the stack tool.py included in this repo.  
+everything will be provisioned using the stacktool.py included in this repo.  
 The stack builds on top Ubuntu VM using Vagrant to provision, docker & Docker Swarm
 to run the services.  
 after installing the stack you can access it via http://localhost:port 
