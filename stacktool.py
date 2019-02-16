@@ -131,7 +131,7 @@ if __name__ == '__main__':
     elif args.opertion == 'up':
         os.system('vagrant up')
     elif args.opertion == 'purge':
-        os.system('vagrant destroy --force')
+        os.system('vagrant destroy')
     elif args.opertion == 'vagrant':
         os.system('vagrant {}'.format(args.cmd))
     elif args.opertion == 'docker':
